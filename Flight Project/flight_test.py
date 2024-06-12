@@ -1,8 +1,8 @@
 import unittest
 import pandas as pd
-from final_project import Flight, Airport, Network
+from flight_graph import Flight, Airport, Network
 
-class final_project_test(unittest.TestCase):
+class flight_graph(unittest.TestCase):
     def setUp(self):
         self.network = Network(9)
         self.network = self.network.create_graphs(9,"dataset.xlsx", "airports.xlsx")
